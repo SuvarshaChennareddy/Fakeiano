@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Fakeiano" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/Fakeiano" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="C:/wxWidgets-2.8.12/lib/gcc_dll/mswu" />
+					<Add directory="C:/wxsqlite3-3.3.1/include" />
+					<Add directory="C:/wxsqlite3-3.3.1/sqlite3/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/wxWidgets-2.8.12/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw28u.a" />
+					<Add library="C:/wxsqlite3-3.3.1/sqlite3/lib/sqlite3.a" />
+					<Add library="C:/wxWidgets-2.8.12/lib/gcc_dll/libwxregexud.a" />
+					<Add directory="C:/wxWidgets-2.8.12/lib/gcc_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option='[[if (GetCompilerFactory().GetCompilerVersionString(_T(&quot;gcc&quot;)) &gt;= _T(&quot;4.8.0&quot;)) print(_T(&quot;-Wno-unused-local-typedefs&quot;));]]' />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add directory="C:/wxWidgets-2.8.12/include" />
+			<Add directory="C:/wxsqlite3-3.3.1/include" />
+			<Add directory="C:/wxsqlite3-3.3.1/sqlite3/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="C:/wxWidgets-2.8.12/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+			<Add library="C:/wxsqlite3-3.3.1/sqlite3/lib/sqlite3.a" />
+			<Add library="C:/wxWidgets-2.8.12/lib/gcc_dll/libwxregexud.a" />
+		</Linker>
+		<Unit filename="../../../../../wxsqlite3-3.3.1/src/wxsqlite3.cpp" />
+		<Unit filename="FakeianoApp.cpp" />
+		<Unit filename="FakeianoApp.h" />
+		<Unit filename="FakeianoMain.cpp" />
+		<Unit filename="FakeianoMain.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="wxsmith/Fakeianoframe.wxs" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="FakeianoApp.cpp" main="FakeianoFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/Fakeianoframe.wxs" src="FakeianoMain.cpp" hdr="FakeianoMain.h" fwddecl="0" i18n="1" name="FakeianoFrame" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

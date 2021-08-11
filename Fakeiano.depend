@@ -1913,3 +1913,39 @@
 1571410254 source:c:\users\reddymanu\downloads\c++ projects\fakeiano\resource.rc
 	"wx/msw/wx.rc"
 
+1570000559 source:c:\users\reddymanu\desktop\projects\fakeiano\fakeianoapp.cpp
+	"FakeianoApp.h"
+	"FakeianoMain.h"
+	<wx/image.h>
+
+1570000558 c:\users\reddymanu\desktop\projects\fakeiano\fakeianoapp.h
+	<wx/app.h>
+
+1570353325 c:\users\reddymanu\desktop\projects\fakeiano\fakeianomain.h
+	<wx/button.h>
+	<wx/frame.h>
+	<wx/grid.h>
+	<wx/menu.h>
+	<wx/stattext.h>
+	<wx/statusbr.h>
+	<wx/textctrl.h>
+	"wx/wxsqlite3.h"
+	<string>
+
+1571746457 source:c:\users\reddymanu\desktop\projects\fakeiano\fakeianomain.cpp
+	"FakeianoMain.h"
+	<wx/msgdlg.h>
+	<iostream>
+	<string>
+	<windows.h>
+	<mmsystem.h>
+	<time.h>
+	<Math.h>
+	<wx/font.h>
+	<wx/intl.h>
+	<wx/string.h>
+	<wx/sound.h>
+
+1571410254 source:c:\users\reddymanu\desktop\projects\fakeiano\resource.rc
+	"wx/msw/wx.rc"
+
